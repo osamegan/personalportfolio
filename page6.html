@@ -1,32 +1,226 @@
 <html>
   <head>
     <title>My Personal Portfolio </title>
-  </head>
-  <p style="color:white; text-align:right;" >
-  <a href="index.html">Home</a>
-  <a href="page2.html">About Me</a>
-<a href="page3.html">Resume</a>
-<a href="page4.html">Project Overview</a>
-<a href="page5.html">Web/Programming</a>
-<a href="page7.html">Art</a>
-<a href="page8.html">Contact Me</a>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="style" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="style" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('https://i.pinimg.com/originals/21/7d/db/217ddb37e13ccfc5e6901d889e2dd940.jpg');
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+footer {
+  text-align: left;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+</style>
+<body>
+
+<div class="topnav">
+  <div class="bar" id="Navbar">
+    <a class="baritem" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation ">
+      <i class="nav"></i>
+    </a>
+    <a href="index.html">Home</a>
+    <a href="page2.html">About me</a>
+    <a href="page3.html">Resume</a>
+    <a href="page4.html">Project Overview</a>
+    <a href="page5.html">Web/Programming</a>
+    <a href="page6.html">Writing</a>
+    <a href="page7.html">Art</a>
+    <a href="page8.html">Contact Me</a>
+      <i class="nav"></i>
+    </a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 style="text-align:center;">W R I T I N G</h3>
+  <p style="text-align: center;color:hotpink;font-size:40px;"><em> My stories </em></p>
+  <p style="text-align: center;color:black;font-size:20px;">Throughout this year we have done quite a bit 
+    <br>of writing assignments. Some of my personal favorites would have to be when we wrote our own stories 
+    <br>as well as our own endings to a story called "The Veldt". The story I wrote was about a girl who could 
+    <br>die but come back to life. The only thing is she felt the pain still. One day, she doesn't feel the pain 
+    <br>and a lot begins to happen. Then, in my ending of "the Veldt" rather than the parents being mauled by 
+    <br>lions, I changed it to they ran out of the room and realized the lions were real, not just in the walls 
+    <br>but outside of them. The parents are scared because the animals are trying to get out of the room but 
+    <br>they are not successful so far.
+    
   </p>
-  <style>  
-    body {
-    background-image: url('https://mediatracks.com/wp-content/uploads/2018/01/aaron-burden-64849-1024x769.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: center;
-  }</style>
-  <body>
-    <center>
-      <h1 style="color: white;"> Writing </h1>
-    <p style="color: white;"> <font size="+1"> Throughout this year we have done quite a bit of writing assignments. Some of my personal favorites would have to be 
-        when we wrote our oen stories as well as our own endings to a story called "The Veldt". The story I wrote was about a girl who could die but come back to life. The only thing is she felt the pain still. One day, she doesn't 
-        feel the pain and a lot begins to happen. Then, in my ending of "the Veldt" ratehr than the parents being mauled by lions, I change it to they ran out of the room 
-        and realized the lions were real, not just in the walls but outside of them. The parents are scared because the animals are trying to get out of the room but they are not successful so far.
-       </font></p>
-  </center>
+  <div class="w3-row">
+  </div>
+  <h4 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> E X A M P L E</h4>
+    <h4 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> 0 1</h4>
+    <h4 style="text-align: center;color:hotpink;font-size:40px;"> T H E </h4>
+    <h4 style="text-align: center;color:hotpink;font-size:40px;"> V E L D T </h4>
+    <h4 style="text-align: center;color:rgb(255, 217, 0);font-size:40px;">Alternate Ending </h4>
+    <p style="text-align: center;color:black;font-size:25px;">Wendy offers Mr. Mclean some tea and he accepts. 
+      <br>He sits down to join them on the floor and they offer him a sandwich. He goes to take a bite, but something 
+      <br>doesn’t feel right. He asks once again where the childrens’ parents are. They respond that they are in the 
+      <br>room with them. Mr. Mclean doesn’t understand but then sees the lions walk past them with Lydia’s scarf 
+      <br>and George’s wallet in their mouths’. The kids ask if he enjoys the sandwich and say they used a new meat. 
+      <br>Mr. Mclean’s face turns white as he realizes what the meat is. He tells the kids he is going to use the 
+      <br>washroom and calls security. After a while they get there, they step into the house and hear children 
+      <br>screaming help. They run to the nursery to find Mr. Mclean torn to pieces by what seemed to be the lions. 
+      <br>The security takes the kids to a foster home and it is never known what truly happened to Mr. Mclean and 
+      <br>the kids’ parents.
+      <p style="text-align: center;"><em> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9a943649954233.58c2dcfd49301.png" alt="HTML "height="250" width="250"></em>
+    </p>
+  </p>
+  <h4 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> E X A M P L E</h4>
+    <h4 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> 0 2</h4>
+    <h4 style="text-align: center;color:hotpink;font-size:30px;"> T H E<br> D A R K</h4>
+    <h4 style="text-align: center;color:hotpink;font-size:30px;"> I N <br>T H E </h4>
+    <h4 style="text-align: center;color:hotpink;font-size:30px;">L I G H T </h4>
+    <p style="text-align: center;color:black;font-size:20px;">There once was a girl who you 
+      <br>could swear on your life was made of stardust and ash. Her name was Sally. As dark 
+      <br>as her soul and mind was, there wasn’t another girl you’d meet that was as sweet and 
+      <br>loving as her. She laid in a field with flowers streaming through her long, beautiful 
+      <br>pale blue hair. She watched as the sun was at one end of the sky and stars were arising 
+      <br>in the other. The soft wind blew her hair into her solid black eyes. Stitches covered 
+      <br>her body like she’d been taken apart and put back together. She was dark and evil like 
+      <br>a witch but beautiful as an angel. Her doll-like dress was spread out on the ground and 
+      <br>slightly waved in the wind. As peaceful as she was, she heard screams and suddenly there 
+      <br>was a dark figure standing above her. When she was a little girl her mother and father 
+      <br>had always fought and they’d blame her for everything and beat her for it. She also had 
+      <br>always been bullied and beaten at school as well. Her only escape was her world, which 
+      <br>was why she now went there so often ever since she realized she could. People called her 
+      <br>crazy for it but after a while she ignored it because it made her happy. Sally didn’t want 
+      <br>to leave. Everybody told her how bad her “world” was but it was better than the one they wanted 
+      <br>her in. Her world, although odd and dark, was nice to her and made her happy. Her world wasn’t 
+      <br>perfect either though. She’d die and come back to life but still feel the pain. Until one day 
+      <br>she didn’t feel it, she didn’t mind in fact, she thought it was cool. Not too long after leaving 
+      <br>her world her brother got run over. It was sad but what was odd was that there was no evidence or 
+      <br>witnesses. It happened right in front of their house and they lived on the busiest street in NYC. 
+      <br>Sally didn’t make any connections until a week later. She realized that just before her brother got 
+      <br>“hit”, she had just run over herself and that was the first time she “died” without feeling the pain. 
+      <br>Sally dismissed it and told herself it wasn’t her fault. Time went by but the family was still 
+      <br>grieving, well most of it at least. Sally moved on frighteningly quickly and went back to her 
+      <br>world. Suddenly, they reminded her of the horrible thing she had done bringing her to hang herself. 
+      <br>Once again, she felt no pain and came back perfectly fine. She decided not to leave so she didn’t 
+      <br>have to be around all the moping people. Her friends took her to a carnival and they had lots of 
+      <br>fun. Soon what happened escaped her mind and she was back to normal. Finally, she decided to come 
+      <br>back to her world and she realized nobody was home, which was unusual because there was always 
+      <br>somebody home. She started calling her family and found out her mother had been hung. Sally didn't 
+      <br>know what to do anymore but knew why these things were happening and was uncertain if she would be 
+      <br>caught or not. A month had passed since she last visited her world and finally decided to go back. 
+      <br>She wanted to die again but is scared of who will be affected. Sally decided that she didn’t care 
+      <br>and stabbed herself. Just as expected, she came back to the real world and her father had been 
+      <br>stabbed. Now the police were really suspicious and they knew they couldn’t just give up on this 
+      <br>case. The police forced Sally and her older sister, who was 27, to go live with their grandparents. 
+      <br>The police still couldn’t find any suspects, leads, or evidence and were now desperate and on edge. 
+      <br>Although Sally felt scared and a little guilty she decided it’s best to just stay quiet. She stopped 
+      <br>going to her world for a little while and had to go back to school. She was a junior in high school 
+      <br>but had no real friends, just lots and lots of acquaintances. One Tuesday morning she decided to 
+      <br>walk home rather than drive and ended up meeting a new friend, her name was Emily. Emily was tall 
+      <br>and slender like Sally but had beautiful long red hair. Her skin was open permanently and bared her 
+      <br>bones to the outside world. For this she too had been bullied and called a freak growing up. Emily 
+      <br>was never beaten but was almost murdered multiple times and that led her to depression and suicide. 
+      <br>That was when she found out about her capability. She really liked that she could fulfill her suicide 
+      <br>craves without actually dying but still being able to feel the pain. Emily was addicted to the pain 
+      <br>and everyone thought that was so gross and weird yet she loved it. She soon learns, through lots 
+      <br>of talking, that this girl was just like her! The girls both have the ability to kill themselves 
+      <br>in their worlds and feel no pain but cause others to die when they do that. Although most would 
+      <br>think that was evil and wrong, it’s what helped them keep their sanity after everything they’ve 
+      <br>been through. Sally and Emily find out that they are both responsible for multiple cold cases and 
+      <br>finally feel like they have a safe place. They wanted to make a tradition and chose to wear all 
+      <br>black every Wednesday. Her and her new friend realized that they had been through too much and people
+      <br> deserved to know how they made them feel. Sally and Emily met up and combined their worlds by communicating. 
+      <br>“Are you here?” asked Emily. “Yes. I’m right down the street, I see you!” exclaimed Sally. “Are you ready?” 
+      <br>asked Emily. “Of course,” replied Sally. They killed themselves over and over for hours on end. They decided 
+      <br>to stop for a bit and go back to see the damage they’d done. The girls came back to a ghost town and were 
+      <br>actually very happy with what they’d done. No longer feeling guilty for anything, the girls moved on to the 
+      <br>next town, leaving a couple of people in each place. Nobody ever could figure out how this was happening and 
+      <br>every single death became a cold case. So many were left devastated and drowned in grief and loneliness. 
+      <br>Sally and Emily proved to everyone that if they don’t want darkness to come then they shouldn’t spread it. 
+      <br>You never know how you’re affecting others with the things you do. 
+  </p>
+  <p style="text-align: center;"><em> <img src="https://images.indianexpress.com/2020/05/death.jpg" alt="HTML "height="350" width="600"></em>
+  </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+    <div class="w3-row">
+    </div>
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</head>
+<body>
+  <footer>
+    <p>Megan Schroeder</p>
+    <p> Website Updated: May 2020</p>
+    <p><a href="mailto:osamegan03@gmail.com">Email Me!</a></p>
+    <p></p>
+  </footer>
 </body>
 </html>
