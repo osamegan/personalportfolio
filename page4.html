@@ -1,55 +1,181 @@
 <html>
   <head>
     <title>My Personal Portfolio </title>
-  </head>
-  <p style="color:white; text-align:right;" >
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="style" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="style" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('https://data.whicdn.com/images/118240686/original.jpg');
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+footer {
+  text-align: left;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+</style>
+<body>
+
+<div class="topnav">
+  <div class="bar" id="Navbar">
+    <a class="baritem" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation ">
+      <i class="nav"></i>
+    </a>
     <a href="index.html">Home</a>
-    <a href="page2.html">About Me</a>
-  <a href="page3.html">Resume</a>
-  <a href="page5.html">Web/Programming</a>
-  <a href="page6.html">Writing</a>
-  <a href="page7.html">Art</a>
-  <a href="page8.html">Contact Me</a>
+    <a href="page2.html">About me</a>
+    <a href="page3.html">Resume</a>
+    <a href="page4.html">Project Overview</a>
+    <a href="page5.html">Web/Programming</a>
+    <a href="page6.html">Writing</a>
+    <a href="page7.html">Art</a>
+    <a href="page8.html">Contact Me</a>
+      <i class="nav"></i>
+    </a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 style="text-align:center;">M Y</h3>
+  <h3 style="text-align:center;">P R O J E C T S</h3>
+  <p style="text-align: center;color:rgb(255, 217, 0);font-size:40px;"><em>What I've done </em></p>
+  <p style="text-align: center;color:black;font-size:20px;">You will get to look into four of the main projects I have done. 
+    <br>The first is a game I created with a partner called Chess.io. The next is an Interactive story I made, the third will 
+    <br>be a calculator. Last but not least, is a program made for a website called Advent of Code. Each came with their own 
+    <br>challenges that were difficult to get through but with perseverance and help from my amazing teacher I was capable of overcoming them.
+
   </p>
-  <style>  
-    body {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjRLTc_4ZjSLRcoQ-sGkrvnKTZuU8Z8qTCLIBA8_98tfmKIJLC&usqp=CAU');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: center;
-  }</style>
-  <body>
-    <center>
-      <h1 style="color: white;"> Project Overview </h1>
-    <p style="color: white;"> <font size="+1"> You will get to look into four of the main prjects I have done. The first is a game I created with a partner called Chess.io. The next 
-        is an Interactive story I made, the third will be a calculator. Last but not least, is a program made for a website called Advent of Code. Each came with their own challenges that were difficult to get through
-        but with perseverance and help from my amazing teacher I was capable of overcoming them.
-       </font></p>
-       <p style="color: white;"><font size="+1">  My first project is Chess.io. We were assigned this project for an event called C.A.R.T. showcase. You get to present your creation to the 
-         whole school and if chosen, you show it to the school board. This year we were partnered up and told to make an electronic version of a board game 
-         and to change it a bit to make it your own. My partner and I chose to make our own version of chess. In our version there were 4 players rather than two and 
-         we only used some of the pieces there are in chess. Each player had two rooks, two bishops, two knights, and one king. 
-         Another thing we changed is the pieces, rather than the bland regular chess pieces we used Pac Man characters. 
-         The objective of the game was to take out other players and fill the board with your color. You would have a line of color follow you 
-         and to fill the board you would have to close off the lines. It was so much fun to make and see the end product and I also had a wonderful partner
-          so this is my favorite project I have created.
-       </p>
-       <p style="color: white;"> <font size="+1"> The second project is an Interactive story I created. Our assignment was to get in groups and choose one person's short story they wrote and turn it into a choose you 
-         own path story. Next we had to code it to work on the computer. Along with it we had to make a diorama of one of the scenes and present it all together.
-          I ended up coding mine alone due to my partner leaving but it was still just as enjoyable.
-       </p>
-       <br>
-       <br>
-       <br>
-       <br>
-       <p style="color: white;"> <font size="+1"> My next project is a calculator we made. We had to make a site that asked you to put in any numbers you pleased along with a math symbol. 
-         Our program was supposed to correctly answer the question.
-       </p>
-       
-       <p style="color: white;"> <font size="+1"> The last project was for a website called Advent of Code. It gave you a task to crack a code. My task was to find the answer 
-         to an extremely long list of numbers that either added or subtracted from eachother. This was my first challenging program I had done.
-       </p>
-  </center>
+  <div class="w3-row">
+  </div>
+  <h4> </h4>
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h5 style="text-align:center;"></h5>
+    <p style="text-align: center;"><em> <img src="data:image/jpeg;base64,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" alt="CART logo "height="50" width="50"></em>
+    <em> <img src="https://nj02207379.schoolwires.net/cms/lib/NJ02207379/Centricity/Domain/389/5936d25138a29.image.png" alt="JROTC logo "height="50" width="50"></em></p>
+    <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> P R O J E C T</h6>
+    <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> 0 1</h6>
+    <p style="text-align: center;color:black;font-size:25px;">My first project is Chess.io. We were assigned 
+      <br>this project for an event called C.A.R.T. showcase. You get to present your creation to the whole school
+      <br> and if chosen, you show it to the school board. This year we were partnered up and told to make an
+      <br> electronic version of a board game and to change it a bit to make it your own. My partner and I chose
+      <br> to make our own version of chess. In our version there were 4 players rather than two and we only 
+      <br>used some of the pieces there are in chess. Each player had two rooks, two bishops, two knights, and
+      <br> one king. Another thing we changed is the pieces, rather than the bland regular chess pieces we used
+      <br> Pac Man characters. The objective of the game was to take out other players and fill the board with
+      <br> your color. You would have a line of color follow you and to fill the board you would have to close
+      <br> off the lines. It was so much fun to make and see the end product and I also had a wonderful partner
+      <br> so this is my favorite project I have created.
+ <p style="text-align: center;"><em> <img src="file:///C:/Users/osame/Pictures/project1pic1.PNG" alt="Board" height="250" width="250">
+    <img src= "file:///C:/Users/osame/Pictures/project1pic2.PNG" alt="Play"height="300" width="250"></em></p>
+      <br>
+      <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> P R O J E C T</h6>
+    <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> 0 2</h6>
+    <p style="text-align: center;color:black;font-size:25px;">The second project is an Interactive story I created. 
+      <br>Our assignment was to get in groups and choose one person's short story they wrote and turn it into a choose
+      <br> your own path story. Next we had to code it to work on the computer. Along with it we had to make a diorama
+      <br> of one of the scenes and present it all together. I ended up coding mine alone due to my partner leaving but
+      <br> it was still just as enjoyable.
+      <p style="text-align: center;"><em> <img src="file:///C:/Users/osame/Pictures/annies%20story.PNG" alt="Annies story"height="550" width="950"></em></p>
+      <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> P R O J E C T</h6>
+    <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> 0 3</h6>
+    <p style="text-align: center;color:black;font-size:25px;">My next project is a calculator we made. 
+      <br>We had to make a site that asked you to put in any numbers you pleased along with a math symbol. 
+      <br>Our program was supposed to correctly answer the question.
+ <p style="text-align: center;"><em> <img src="file:///C:/Users/osame/Pictures/calccode1.PNG" alt="Calccode1"height="650" width="650"></em>
+  <em> <img src="file:///C:/Users/osame/Pictures/calccode2.PNG" alt="Calccode2"height="650" width="650"></em>
+  <em> <img src="file:///C:/Users/osame/Pictures/calccode3.PNG" alt="Calccode3"height="650" width="650"></em>
+</p>
+      <br>
+      <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> P R O J E C T</h6>
+    <h6 style="text-align: center;color:rgb(255, 217, 0);font-size:50px;"> 0 4</h6>
+    <p style="text-align: center;color:black;font-size:25px;">The last project was for a website called Advent of Code. 
+      <br>It gave you a task to crack a code. My task was to find the answer to an extremely long list of numbers that 
+      <br>either added or subtracted from eachother. This was my first challenging program I had done.
+      <p style="text-align: center;"><em> <img src="file:///C:/Users/osame/Pictures/project2pic1.PNG" alt="AOC assignment "height="250" width="250"></em>
+        <em> <img src="file:///C:/Users/osame/Downloads/AOC_Capture.PNG" alt="AOC complete"height="250" width="650"></em></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+    <div class="w3-row">
+    </div>
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</head>
+<body>
+  <footer>
+    <p>Megan Schroeder</p>
+    <p> Website Updated: May 2020</p>
+    <p><a href="mailto:osamegan03@gmail.com">Email Me!</a></p>
+    <p></p>
+  </footer>
 </body>
 </html>
